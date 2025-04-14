@@ -68,7 +68,7 @@ func _physics_process(delta):
 	# CANCELAR ROLLING
 	# ---------------------
 	if is_rolling:
-	# Saltar en rolling cancela el estado pero mantiene velocidad
+	# Saltar en rolling cancela el estado pero mantiene velocidad (en movimiento del rolling)
 		if Input.is_action_just_pressed("ui_accept"):
 			is_rolling = false
 			velocity.y = JUMP_FORCE
